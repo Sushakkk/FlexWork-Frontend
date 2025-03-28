@@ -15,7 +15,7 @@ body{
 	scroll-behavior: smooth;
 	scroll-padding-top: 50px; 
 	line-height: 1;
-	background-color: var(--font);
+	background-color: var(--font) !important;
 	font-size: 16px;
 	/* color: var(--color_header); */
 	font-weight: 400;
@@ -42,6 +42,45 @@ body{
 	margin: 0px auto;
 	box-sizing: content-box;
 }
+
+
+
+.button-page.grey:hover {
+    color: var(--border);
+    background-color: var(--base);
+    border: 1px solid var(--border);
+}
+
+.button-page.grey {
+	text-wrap: nowrap;
+    color: var(--base); /* Цвет текста на цвет фона */
+    background-color: var(--border); /* Цвет фона на цвет текста */
+    border: 1px solid var(--base); /* Цвет границы на цвет текста */
+}
+.button-page-s{
+	margin: 10px;
+	padding: 10px;
+	border-radius: 5px;
+}
+.button-page-s.green {
+    color: var(--base); /* Цвет текста на цвет фона */
+    background-color: var(--main_color); /* Цвет фона на цвет текста */
+
+}
+.button-page-s.red {
+    color: var(--base); /* Цвет текста на цвет фона */
+    background-color: red; /* Цвет фона на цвет текста */
+
+}
+
+
+
+.button-page-s:disabled {
+    background-color: rgb(211, 211, 211);
+    cursor: not-allowed; /* Указатель мыши для дизабленной кнопки */
+}
+
+
 
 
 

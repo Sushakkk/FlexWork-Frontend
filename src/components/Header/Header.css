@@ -47,6 +47,18 @@
 	text-decoration: none;
 }
 
+.user-info-container{
+	z-index: 3;
+	display: flex;
+	align-items: center;
+}
+.user-info{
+	z-index: 3;
+	color: var(--main_color);
+	font-size: 18px;
+
+}
+
 .header__logo img {
 	max-width: 100%;
 	display: block;
@@ -167,7 +179,7 @@ ol, ul, dl {
 		width: 100%;
 		height: 2px;
 		top: 9px;	
-		transition: all 0.5s ease 0s;
+		transition: all 0.3s ease 0s;
 		
 	}
 	.header__burger:before,.header__burger:after{
@@ -177,7 +189,7 @@ ol, ul, dl {
 		width: 100%;
 		height: 2px;
 		left:0;
-		transition: all 0.5s ease 0s;
+		transition: all 0.3s ease 0s;
 		
 
 	}
@@ -220,7 +232,7 @@ ol, ul, dl {
 		border-bottom: 1px solid var(--border);
 		background-color: white;
 		padding: 70px 10px 20px 0px;
-		transition: all 0.5s ease 0s;
+		transition: all 0.3s ease 0s;
 		display: flex;          /* Используем Flexbox */
 		flex-direction: column; /* Располагаем элементы по вертикали */
 		align-items: center;    /* Центрируем по горизонтали */

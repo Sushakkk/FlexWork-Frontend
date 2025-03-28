@@ -6,41 +6,36 @@ import { ActivitiesMocks } from '../../modules/mocks';
 import { T_Activity } from '../../modules/types';
 import { useParams } from 'react-router-dom';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
+import { useAppDispatch } from '../../store';
+import { fetchActivity, useActivity } from '../../slices/activitiesSlice';
 
 
 
 const ActivityPage: React.FC = () => {
   const { id } = useParams<{id: string}>();
-  const [activity, setActivity] = useState<T_Activity | null>(null);
   const [isMock, setIsMock] = useState(false);
+  const dispatch = useAppDispatch();
+
+  const currentHost = window.location.hostname;
+
+  const activity=useActivity()
 
 
-  const fetchData = async () => {
-    try {
-      const response = await fetch(`/api/activities/${id}`, { signal: AbortSignal.timeout(1000) });
-      if (!response.ok) throw new Error('Network response was not ok');
-      const data = await response.json();
-      setActivity(data);
-    } catch (error) {
-      console.error('Fetch error:', error);
-      createMock();
-    }
-  };
 
   const createMock = () => {
     setIsMock(true);
-    setActivity(ActivitiesMocks.find(activity => activity?.id == parseInt(id as string)) as T_Activity)
+    // setActivity(ActivitiesMocks.find(activity => activity?.id == parseInt(id as string)) as T_Activity)
 }
 
   useEffect(() => {
     if (!isMock) {
-      fetchData();
+      dispatch(fetchActivity(String(id)))
     } else {
       createMock();
     }
 
     return () => {
-      setActivity(null);
+      // setActivity(null);
     };
   }, [id, isMock]);
 

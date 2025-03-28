@@ -1,0 +1,123 @@
+
+.main-content{
+
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-weight: 500;
+    justify-content: center
+    
+
+}
+
+.title_main{
+    font-size:  2.25rem;
+    text-align: center;
+    font-weight: bold; /* Сделаем метку жирным шрифтом */
+    
+}
+
+.main__text{
+    display: flex;
+    align-items: center;
+}
+
+.main__input{
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    padding: 10px; /* Adds some padding inside the input and textarea for better readability */
+    margin-top: 5px; /* Adds a small margin at the top for spacing */
+  }
+  
+  .full-width textarea {
+    resize: horizontal; /* Allows vertical resizing of the textarea */
+  }
+  
+.main-content input, .main-content textarea{
+    border: 1px solid var(--border);
+}
+.main-block__body {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+   
+    gap: 40px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px 30px 30px 30px;
+}
+
+
+.main-block__details{
+    color: var(--text);
+    width: 100%;
+    
+}
+
+
+@media (max-width: 500px) {
+    .main-block__details{
+        width: 100%;
+    }
+    .title_main{
+        font-size:  24px;
+        
+    }
+}
+
+.main-block__details p {
+    margin: 20px 0; 
+    padding: 5px 0; /* Добавляем вертикальные отступы */
+    line-height: 1.25; /* Увеличенный межстрочный интервал */
+
+}
+
+.detail-label {
+    font-weight: bold; /* Сделаем метку жирным шрифтом */
+    margin-right: 7px; /* Добавляем отступ между меткой и значением */
+    color: var(--text)
+}
+
+
+.price{
+    color: var(--main_color);
+    font-weight: bold; /* Сделаем метку жирным шрифтом */
+}
+
+.main-block__image {
+    max-width: 90%;
+    height: auto;
+   
+}
+
+
+.main-block__image img {
+
+    max-width: 100%; /* ограничить ширину изображения контейнером */
+    height: auto; /* поддерживать соотношение сторон */
+    border-radius: 10px; /* добавление округлости к углам, если требуется */
+    border: 2px solid var(--border);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     max-height: 400px;
+}
+
+.main-block__container-details{
+    display: flex;
+    gap:7px;
+    align-items: center;
+    
+}
+/* .main-block__container-details input{
+    border: 1px solid var(--border);
+    
+} */
+
+
+
+
+

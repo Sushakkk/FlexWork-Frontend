@@ -1,0 +1,144 @@
+.page__basket {
+}
+
+.basket__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    font-size: 20px;
+    
+}
+
+.basket__titles{
+    display: flex;
+    flex-direction: column;
+    gap:30PX
+}
+
+
+.basket_fio_container{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    margin-top: 50px;
+}
+
+.basket_fio_container input{
+    width: 350px;
+}
+
+
+.basket__title{
+    font-size: 36px;
+    gap:20px;
+    
+
+}
+
+.basket__title-main{
+    font-weight: 600;
+}
+
+.basket__cards{
+    display: flex;
+    flex-direction: column;
+  
+
+}
+.basket__row {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+    
+    
+}
+.basket__card {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr; 
+    gap: 20px; 
+    width: 100%;
+    align-items: center;
+   
+    border: 2px solid var(--border);
+    padding: 20px 30px;
+    border-radius: 20px;
+    background-color: var(--base);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 170px;
+
+
+  
+    
+}
+
+
+
+
+.item-basket__main-description{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:25px
+}
+
+.item-basket__price-button{
+    
+}
+.item-basket {
+}
+.item-basket__title {
+    padding-left: 20px;
+    font-weight: bold;
+    
+}
+.basket_fio{
+    color: var(--text);
+}
+
+.item-basket__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-width: 120px;
+    min-height: 70px;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-basket__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+
+
+.checkbox{
+    display: flex;
+    justify-self: start;
+    margin: 26px;
+}
+
+
+.item-basket__price {
+
+}
+.item-basket__button {
+}

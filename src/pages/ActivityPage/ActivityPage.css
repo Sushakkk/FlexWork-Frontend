@@ -1,5 +1,4 @@
 
-
 .main-content{
 
     display: flex;
@@ -16,6 +15,33 @@
     text-align: center;
     font-weight: bold; /* Сделаем метку жирным шрифтом */
     
+}
+
+.main__text{
+    display: flex;
+    align-items: center;
+}
+.main__text textarea{
+  width: 100%;
+}
+
+.main__input{
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    padding: 10px; /* Adds some padding inside the input and textarea for better readability */
+    margin-top: 5px; /* Adds a small margin at the top for spacing */
+  }
+  
+  .full-width textarea {
+    resize: horizontal; /* Allows vertical resizing of the textarea */
+  }
+  
+.main-content input{
+    border: 1px solid var(--border);
 }
 .main-block__body {
     display: flex;

@@ -122,7 +122,6 @@
 
 
 
-
 .main-block__button__add{
     padding: 7px 14px;
     border-radius: 50%;
@@ -152,8 +151,14 @@
     background-color: white;
     width: 65px;
     height: 65px;
+    cursor: pointer;
 
 }
+.basket__img.disabled{
+    background-color: var(--border);
+}
+
+
 .basket_amount {
     position: absolute;
     top: 0;
